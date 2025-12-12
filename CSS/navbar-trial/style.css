@@ -38,10 +38,12 @@ a:hover{
     color: orangered;
     cursor:pointer;
 }
+.logo{
+  flex-grow: 1;
+    flex-shrink:5;
+}
 .logo:hover{
     text-transform: uppercase;
     cursor:pointer;
-    flex-grow: 1;
-    flex-shrink:5;
     
 }
