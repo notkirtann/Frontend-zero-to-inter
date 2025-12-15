@@ -1266,7 +1266,7 @@ a {
 /* Footer Responsive */
 @media (max-width: 900px) {
   .footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
