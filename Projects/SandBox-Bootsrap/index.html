@@ -13,209 +13,283 @@
 
 <body>
 
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top gradient-bg py-4">
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-transparent py-3">
   <div class="container px-5">
 
     <a class="navbar-brand" href="#">
-      <img id="logo" src="./assets/logo-light" width="140" alt="Sandbox">
+      <img id="logo" src="./assets/logo-light" width="140" alt="Sandbox" class="logo-light">
+      <img src="./assets/logo-dark" width="140" alt="Sandbox" class="logo-dark d-none">
     </a>
 
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav mx-auto fw-semibold">
-
+<!-- demo -->
         <li class="nav-item dropdown dropdown-mega position-static">
-          <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Demos
           </a>
 
-          <div class="dropdown-menu w-100  border-0 shadow-lg m-0 bg-darkk text-white">
+          <div class="dropdown-menu mega-menu w-100 border-0 shadow-lg m-0">
             <div class="container py-4">
               <div class="row g-4">
-
-                <div class="col-6 col-md-3 col-lg-2">
+<!-- demos scroll -->
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-2" class="img-fluid rounded mb-2">
-                    
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-3" class="img-fluid rounded mb-2">
-                    
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-2" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-3" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-2" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-3" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-2" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-3" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-2" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-3" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-2" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-3" class="img-fluid rounded mb-2">
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-2" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-3" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2" v-for="i in 24">
                   <a href="#" class="demo-link">
-                    <img src="./assets/case-1.jpg" class="img-fluid rounded mb-2">  
+                    <figure class="demo-figure rounded mb-2 lift">
+                      <img src="./assets/case-1.jpg" class="img-fluid rounded">
+                    </figure>
+                    <span class="demo-title d-block text-center">Demo 1</span>
                   </a>
                 </div>
-
+              </div>
+              <div class="text-center mt-4">
+                <span class="text-muted d-none d-lg-inline-flex align-items-center">
+                  <i class="fa-solid fa-arrows-up-down me-2"></i>
+                  <strong class="text-white">Scroll to view more</strong>
+                </span>
               </div>
             </div>
           </div>
         </li>
-
-        <!-- Pages -->
+<!-- pages -->
         <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">About</a></li>
-            <li><a class="dropdown-item" href="#">Services</a></li>
-            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li class="dropdown-submenu dropend">
+              <a class="dropdown-item dropdown-toggle" href="#">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Services I</a></li>
+                <li><a class="dropdown-item" href="#">Services II</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu dropend">
+              <a class="dropdown-item dropdown-toggle" href="#">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About I</a></li>
+                <li><a class="dropdown-item" href="#">About II</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu dropend">
+              <a class="dropdown-item dropdown-toggle" href="#">Contact</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Contact I</a></li>
+                <li><a class="dropdown-item" href="#">Contact II</a></li>
+                <li><a class="dropdown-item" href="#">Contact III</a></li>
+              </ul>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Pricing</a></li>
+            <li><a class="dropdown-item" href="#">One Page</a></li>
           </ul>
         </li>
-
-        <!-- Projects -->
+<!-- projects -->
         <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Projects Grid</a></li>
             <li><a class="dropdown-item" href="#">Single Project</a></li>
           </ul>
         </li>
-
-        <!-- Blog -->
+<!-- blog -->
         <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Blog List</a></li>
             <li><a class="dropdown-item" href="#">Blog Post</a></li>
           </ul>
         </li>
 
-        <!-- Blocks -->
+<!-- blocks -->
         <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Blocks</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blocks</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Hero</a></li>
             <li><a class="dropdown-item" href="#">Features</a></li>
@@ -223,9 +297,9 @@
           </ul>
         </li>
 
-        <!-- Documentation -->
+<!-- documentation -->
         <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Documentation</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Getting Started</a></li>
             <li><a class="dropdown-item" href="#">Components</a></li>
@@ -235,14 +309,69 @@
 
       </ul>
 
-      <!-- Right Icons -->
-      <div class="d-flex gap-3">
-        <i class="fa-solid fa-circle-info text-white"></i>
-        <i class="fa-solid fa-magnifying-glass text-white"></i>
+<!-- right -->
+      <div class="navbar-other d-flex gap-3 align-items-center">
+        <button class="nav-icon-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info" aria-label="Info">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+        <button class="nav-icon-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
     </div>
   </div>
 </nav>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-top offcanvas-search" id="offcanvas-search" tabindex="-1">
+  <div class="container d-flex align-items-center py-5">
+    <div class="search-wrapper flex-grow-1 me-4">
+      <input type="text" class="form-control form-control-lg border-0 bg-transparent" placeholder="Type keyword and hit enter">
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end offcanvas-info" id="offcanvas-info" tabindex="-1" data-bs-scroll="true">
+  <div class="offcanvas-header">
+    <h3 class="fs-30 mb-0">Sandbox</h3>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="widget mb-5">
+      <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your business.</p>
+    </div>
+    <div class="widget mb-5">
+      <h4 class="widget-title mb-3">Contact Info</h4>
+      <address class="mb-3">
+        Moonshine St. 14/05<br>
+        Light City, London
+      </address>
+      <a href="mailto:info@kirtan.com" class="d-block mb-1">info@kirtan.com</a>
+      <p class="mb-0">00 (000) 0000</p>
+    </div>
+    <div class="widget mb-5">
+      <h4 class="widget-title mb-3">Learn More</h4>
+      <ul class="list-unstyled">
+        <li class="mb-2"><a href="#" class="link-hover">About Us</a></li>
+        <li class="mb-2"><a href="#" class="link-hover">Our Story</a></li>
+        <li class="mb-2"><a href="#" class="link-hover">Projects</a></li>
+        <li class="mb-2"><a href="#" class="link-hover">Terms of Use</a></li>
+        <li><a href="#" class="link-hover">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4 class="widget-title mb-3">Follow Us</h4>
+      <nav class="nav social-icons gap-2">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
 
 <section id="Hero-Intro" class="text-white position-relative text-center overflow-hidden" style="padding-top:100px ;">
   <div class="position-relative m-auto z-1 hero-container py-5">
@@ -252,7 +381,7 @@
       <em class="hero-underline rounded-4">assist</em>
       every <br> stage of your growth.
     </h1>
-    <a class="btn btn-light btn-md px-4 py-3 rounded-3 fw-bold mt-4" style='font-family:"Space Grotesk";color: #262b32;'>Explore Now</a>
+    <a class="btn btn-light btn-md px-4 py-3 rounded-3 fw-bold mt-4" style='font-family:"Manrope";color: #262b32;'>Explore Now</a>
   </div>
 </section>
 
@@ -337,7 +466,7 @@
       </h1>
     </div>
 
-    <div class="row g-5" style='font-family: "Space Grotesk";'>
+    <div class="row g-5" style='font-family: "Manrope";'>
       <div class="col-md-6 col-lg-4">
         <div class="d-flex gap-3">
           <img src="./assets/market-auto" width="80px" height="60px">
@@ -401,7 +530,7 @@
   </div>
 </section>
 
-<section id="Why-Different" class="bg-body" style='padding: 140px 80px; font-family: "Space Grotesk", sans-serif; '>
+<section id="Why-Different" class="bg-body" style='padding: 140px 80px; font-family: "Manrope", sans-serif; '>
     <div class="m-auto d-grid align-items-center" style="grid-template-columns: 1fr 1.1fr; gap: 100px;max-width: 1300px;">
         <!-- Left -->
         <div class="why-content">
@@ -506,7 +635,7 @@
   </div>
 </section>
 
-<section id="Why-Choose" class="w-100" style='background: #FEFEFE; padding: 100px 80px;font-family: "Space Grotesk", sans-serif;'>
+<section id="Why-Choose" class="w-100" style='background: #FEFEFE; padding: 100px 80px;font-family: "Manrope", sans-serif;'>
     <div class="m-auto" style="max-width: 1400px;">
 
         <div class="text-center mb-5">
@@ -613,7 +742,7 @@
     </div>
 </section>
 
-<section id="Team-Section" style='font-family: "Space Grotesk", sans-serif; background-color: #F6F6F8;'>
+<section id="Team-Section" style='font-family: "Manrope", sans-serif; background-color: #F6F6F8;'>
         <!-- Top Part -->
         <div class="pt-5 px-0 pb-5 text-center position-relative">
             <div class="position-relative w-75 m-auto">
@@ -707,16 +836,37 @@
 const navbar = document.getElementById("navbar");
 const logo = document.getElementById("logo");
 
+let lastScroll = 0;
+const scrollThreshold = 50;
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 200) {
-    navbar.classList.remove("gradient-bg");
-    navbar.classList.add("bg-white","shadow");
-    logo.src="./assets/logo-dark";
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll > scrollThreshold) {
+    navbar.classList.remove("navbar-transparent");
+    navbar.classList.add("navbar-scrolled");
   } else {
-    navbar.classList.add("gradient-bg");
-    navbar.classList.remove("bg-white","shadow");
-    logo.src="./assets/logo-light";
+    navbar.classList.add("navbar-transparent");
+    navbar.classList.remove("navbar-scrolled");
   }
+  
+  lastScroll = currentScroll;
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdowns = document.querySelectorAll('.dropdown-submenu');
+  
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', function(e) {
+      if (window.innerWidth < 992) {
+        e.stopPropagation();
+        const submenu = this.querySelector('.dropdown-menu');
+        if (submenu) {
+          submenu.classList.toggle('show');
+        }
+      }
+    });
+  });
 });
 </script>
 
@@ -744,4 +894,9 @@ What I Do Now?
 A Whole Lot Worse
 Heavy Is The Head
 It’s A Blessing And A Curse 
+
+Ladies And Gentlemen    You Are Not Ready For This
+Na De Dil Pardesi Nu,   Tenu Nit Da Rona Pai Jau Ga
+Naal Ranje Jogi De Tenu,  Jogan Hauna Pai Jau Ga
+Main Ishq De Allein Zakhma De,  Khud Hasshass Ke Muh Seen Lan Gi
 -->
