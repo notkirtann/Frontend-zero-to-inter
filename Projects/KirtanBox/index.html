@@ -9,28 +9,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Outfit:wght@100..900&family=Prata&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> 
     
     <header id="navbar">
     <div class="nav-container">
         <div class="logo"><a href="#"><img src="./img/logo-light" alt=""></a></div>
 
         <nav class="nav-links">
+
         <div class="nav-item">
             <a href="#">Demos</a>
-            <div class="dropdown" >
-            <a href="#"><img src="./img/bernabeu.jpg" alt="" width="100px"></a>
-            <a href="#"><img src="./img/bernabeu.jpg" alt="" width="100px"></a>
-            <a href="#"><img src="./img/bernabeu.jpg" alt="" width="100px"></a>
+            <div class="dropdown">
+            <a href="#"><img src="./img/bernabeu.jpg" width="100"></a>
+            <a href="#"><img src="./img/bernabeu.jpg" width="100"></a>
+            <a href="#"><img src="./img/bernabeu.jpg" width="100"></a>
             </div>
         </div>
 
+        <!-- Pages with nested li -->
         <div class="nav-item">
             <a href="#">Pages</a>
+
             <div class="dropdown">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <ul class="dropdown-list">
+                <li><a href="#">About</a></li>
+
+                <li class="has-submenu">
+                <a href="#">Services</a>
+
+                <!-- nested li inside li -->
+                <ul class="submenu">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Backend APIs</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#">Contact</a></li>
+            </ul>
             </div>
         </div>
 
@@ -38,7 +54,9 @@
         <a href="#">Blog</a>
         <a href="#">Blocks</a>
         <a href="#">Documentation</a>
+
         </nav>
+
 
         <div class="nav-icons">
         <span class="icon">ⓘ</span>
