@@ -819,7 +819,6 @@ input[type="radio"] {
   color: #ffffff;
 }
 
-/* Scrolled Navbar (Solid White) */
 .navbar-scrolled {
   background: #ffffff !important;
   box-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.08);
@@ -896,12 +895,12 @@ input[type="radio"] {
 .dropdown-toggle::after {
   margin-left: 0.35em;
   font-size: 0.75em;
-  vertical-align: 0.1em;
+  vertical-align: 0.05em;
   transition: transform 0.2s ease;
 }
 
 .dropdown-toggle:hover::after {
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
 
 .dropdown-menu {
@@ -909,7 +908,7 @@ input[type="radio"] {
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 2rem rgba(30, 34, 40, 0.15);
   padding: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: -0.1rem !important;
   min-width: 220px;
   animation: fadeInDown 0.3s ease;
 }
